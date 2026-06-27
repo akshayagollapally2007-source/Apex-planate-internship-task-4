@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio & Project Showcase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="portfolio-header">
+        <div class="logo">DevPortfolio</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects Hub</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="hero-section">
+        <div class="hero-content">
+            <h1>Hi, I'm a Web Developer</h1>
+            <p>Welcome to my professional workspace showcase. Below you can interact directly with my built-in applications executing functional algorithms, responsive state changes, and localized data persistence.</p>
+        </div>
+    </section>
+    <main id="projects" class="projects-container">
+        <h2 class="section-title">Interactive Project Workspace</h2>
+        
+        <div class="project-grid">
+            
+            <section class="project-card note-app-card">
+                <h3>Persistent Note-Taking Engine</h3>
+                <p class="subtitle">Data is structurally preserved and loaded via client-side <code>localStorage</code>.</p>
+                
+                <div class="note-input-container">
+                    <textarea id="noteInput" placeholder="Write down your technical thoughts or ideas here..."></textarea>
+                    <button id="saveNoteBtn" class="btn btn-success">Save Note</button>
+                </div>
+                
+                <div class="notes-display-wrapper">
+                    <h4>Saved Notes Logs</h4>
+                    <ul id="notesList">
+                    </ul>
+                </div>
+            </section>
+
+            <section class="project-card market-card">
+                <h3>Product Catalog Interface</h3>
+                <p class="subtitle">Filter complex mock structures by category and sort records by pricing margins or ratings.</p>
+                
+                <div class="controls-panel">
+                    <div class="control-group">
+                        <label for="filterCategory">Filter Category:</label>
+                        <select id="filterCategory">
+                            <option value="all">All Categories</option>
+                            <option value="Electronics">Electronics</option>
+                            <option value="Apparel">Apparel</option>
+                            <option value="Office">Office Supplies</option>
+                        </select>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="sortCriteria">Sort By:</label>
+                        <select id="sortCriteria">
+                            <option value="default">Default</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="rating">Highest Rated</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="productsGrid" class="products-showcase-grid">
+                 
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer id="contact" class="portfolio-footer-section">
+        <h2>Let's Connect</h2>
+        <p>Interested in robust engineering implementations? Drop an email signature or reach out.</p>
+        <div class="contact-links">
+            <a href="mailto:developer@example.com">developer@example.com</a>
+            <a href="#">LinkedIn Workspace</a>
+            <a href="#">GitHub Repository</a>
+        </div>
+        <p class="copyright">&copy; 2026 Developer Portfolio. Built for Project Implementation.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
